@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cbrasgdr5bjea"]
+
+[ext_resource type="Texture2D" uid="uid://51nogr3um8eb" path="res://Images/Obstacles/Obstacle_Rosita.png" id="1_nfn2k"]
+[ext_resource type="Script" uid="uid://bhdj1i0cjtkpk" path="res://Scripts/obstacle.gd" id="1_qaun2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qaun2"]
+radius = 229.89542
+height = 534.0894
+
+[node name="Node2D" type="Node2D" unique_id=137587618]
+
+[node name="Obstacle" type="Area2D" parent="." unique_id=1529194199]
+script = ExtResource("1_qaun2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle" unique_id=628330351]
+position = Vector2(-2, 3)
+texture = ExtResource("1_nfn2k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle" unique_id=150681565]
+position = Vector2(5, 157)
+rotation = -1.5934856
+shape = SubResource("CapsuleShape2D_qaun2")
