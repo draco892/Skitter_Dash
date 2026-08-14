@@ -20,3 +20,5 @@ texture = ExtResource("1_nfn2k")
 position = Vector2(5, 157)
 rotation = -1.5934856
 shape = SubResource("CapsuleShape2D_qaun2")
+
+[connection signal="body_entered" from="Obstacle" to="Obstacle" method="_on_body_entered"]
